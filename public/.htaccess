@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+
+    # If a directory or a file exists, use it directly
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Otherwise forward it to index.php
+    RewriteRule . index.php
+</IfModule>
+
+<FilesMatch ".*\.env$">
+    Deny from all
+</FilesMatch>

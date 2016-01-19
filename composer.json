@@ -1,0 +1,19 @@
+{
+    "name": "krisanalfa/scarf",
+    "type": "project",
+    "license": "MIT",
+    "description": "The Scarf Framework.",
+    "keywords": ["framework", "scarf", "laravel", "pico"],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App"
+        }
+    },
+    "require": {
+        "krisanalfa/scarf-kernel": "^1.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.0"
+    },
+    "preferred-install": "dist"
+}
